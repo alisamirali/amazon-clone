@@ -27,8 +27,8 @@ export default async function handler(
     },
     line_items: modifiedItems,
     mode: "payment",
-    success_url: `${process.env.NEXT_AUTH_URL}/success`,
-    cancel_url: `${process.env.NEXT_AUTH_URL}/checkout`,
+    success_url: `https://amazon-eg.vercel.app/success`,
+    cancel_url: `https://amazon-eg.vercel.app/checkout`,
     metadata: {
       email,
       images: JSON.stringify(items.map((item: any) => item.image)),

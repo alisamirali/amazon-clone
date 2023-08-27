@@ -64,25 +64,15 @@ const CartPayment = () => {
           <FormattedPrice amount={totalAmount} />
         </span>
       </p>
-      {userInfo ? (
-        <div className="flex flex-col items-center">
-          <button
-            onClick={handleCheckout}
-            className="w-full h-10 text-sm font-semibold bg-amazon_blue text-white rounded-lg hover:bg-amazon_yellow hover:text-black duration-300"
-          >
-            Proceed to Buy
-          </button>
-        </div>
-      ) : (
-        <div className="flex flex-col items-center">
-          <button className="w-full h-10 text-sm font-semibold bg-amazon_blue bg-opacity-50 text-white rounded-lg cursor-not-allowed">
-            Proceed to Buy
-          </button>
-          <p className="text-xs text-red-500 font-semibold mt-3">
-            Please login to continue
-          </p>
-        </div>
-      )}
+
+      <div className="flex flex-col items-center">
+        <button
+          onClick={handleCheckout}
+          className="w-full h-10 text-sm font-semibold bg-amazon_blue text-white rounded-lg hover:bg-amazon_yellow hover:text-black duration-300"
+        >
+          Proceed to Buy
+        </button>
+      </div>
     </div>
   );
 };

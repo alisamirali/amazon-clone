@@ -33,7 +33,7 @@ const BottomHeader = () => {
           Sell
         </p>
       </div>
-      <div>
+      {/* <div>
         {userInfo && (
           <button
             onClick={handleSignOut}
@@ -42,7 +42,7 @@ const BottomHeader = () => {
             Sign Out
           </button>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

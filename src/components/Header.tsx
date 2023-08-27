@@ -125,7 +125,7 @@ const Header = () => {
           {/* ========== Searchfield ========== */}
         </div>
         {/* signin */}
-        {userInfo ? (
+        {/* {userInfo ? (
           <div className="hidden md:flex items-center px-2 border border-transparent hover:border-white cursor-pointer duration-300 h-[70%] gap-1">
             <Image
               src={userInfo.image}
@@ -138,20 +138,20 @@ const Header = () => {
               <p className="text-white font-bold">{userInfo.name}</p>
             </div>
           </div>
-        ) : (
-          <div
-            onClick={() => signIn()}
-            className="text-xs text-gray-100 hidden md:flex flex-col justify-center px-2 border border-transparent hover:border-white cursor-pointer duration-300 h-[70%]"
-          >
-            <p>Hello, sign in</p>
-            <p className="text-white font-bold flex items-center">
-              Account & Lists{" "}
-              <span>
-                <BiCaretDown />
-              </span>
-            </p>
-          </div>
-        )}
+        ) : ( */}
+        <div
+          onClick={() => {}}
+          className="text-xs text-gray-100 hidden md:flex flex-col justify-center px-2 border border-transparent hover:border-white cursor-pointer duration-300 h-[70%]"
+        >
+          <p>Hello, sign in</p>
+          <p className="text-white font-bold flex items-center">
+            Account & Lists{" "}
+            <span>
+              <BiCaretDown />
+            </span>
+          </p>
+        </div>
+        {/* )} */}
         {/* favorite */}
         <Link
           href={"/favorite"}

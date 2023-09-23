@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 const SuccessPage = () => {
   const dispatch = useDispatch();
   return (
-    <div className="flex flex-col gap-2 items-center justify-center py-20">
+    <div className="flex flex-col gap-2 items-center h-screen justify-center">
       <h1 className="text-2xl text-hoverBg font-semibold">
         Thank you for shopping in Amazon Clone
       </h1>

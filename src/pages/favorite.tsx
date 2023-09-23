@@ -27,7 +27,7 @@ const FavoritePage = () => {
           </div>
         </div>
       ) : (
-        <div className="bg-white h-96  flex flex-col items-center justify-center py-5 rounded-lg shadow-lg">
+        <div className="bg-white h-screen flex flex-col items-center justify-center py-5 rounded-lg shadow-lg">
           <h1>Nothing is available in the Favorite list</h1>
           <Link href="/">
             <button className="w-52 h-10 bg-amazon_blue text-white rounded-lg text-sm font-semibold hover:bg-amazon_yellow hover:text-black duration-300 mt-2">
